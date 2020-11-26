@@ -77,7 +77,7 @@ prefix_install: installables
 
 install: installables
 	if [ ! -d "$(BINARIES_FOLDER)" ]; then $(SUDO) $(MKDIR) "$(BINARIES_FOLDER)"; fi
-	$(SUDO) $(CP) -f "$(CARTHAGE_EXECUTABLE)" "$(BINARIES_FOLDER)"
+	$(CP) -f "$(CARTHAGE_EXECUTABLE)" "$(BINARIES_FOLDER)"
 
 uninstall:
 	$(RM) "$(BINARIES_FOLDER)/carthage"
